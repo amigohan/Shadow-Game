@@ -1,0 +1,4 @@
+repository "ShadowGame@amigohan@cloud"
+  path "/"
+    br "/main"
+    co "/main"
