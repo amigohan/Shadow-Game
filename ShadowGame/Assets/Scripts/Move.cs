@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float moveSpeed = 5f;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // Yatay ve dikey girişleri al
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        // Hareket vektörünü oluştur
+        Vector2 movement = new Vector2(horizontalInput, verticalInput);
+
+        // Normalleştirme ve hızı çarpma
+        movement *= moveSpeed * Time.deltaTime;
+
+        // Hareketi uygula
+        transform.Translate(movement);
     }
 }
