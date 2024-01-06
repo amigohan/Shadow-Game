@@ -1042,7 +1042,6 @@ GameObject:
   - component: {fileID: 310939921}
   - component: {fileID: 310939925}
   - component: {fileID: 310939926}
-  - component: {fileID: 310939927}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -1105,7 +1104,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: -12
   m_Sprite: {fileID: -523636280, guid: 428b468974316704f91ce9fa4887ea57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1224,7 +1223,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05187595, y: -2.739012}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1235,22 +1234,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9727452, y: 1.931976}
+  m_Size: {x: 3.28, y: 7.41}
   m_EdgeRadius: 0
---- !u!114 &310939927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310939917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8ed6256774f3014194b7283c1cdd026, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeLeft: 10
-  textDisplay: {fileID: 0}
 --- !u!4 &314448278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6455123206326087747, guid: 1eb20f9918a1a3143a22d29257831a57, type: 3}
