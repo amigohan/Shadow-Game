@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Teleporter
+<<<<<<< Updated upstream
   - InteractableObject
+=======
+  - Flower
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
