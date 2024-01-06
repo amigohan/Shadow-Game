@@ -1,29 +1,34 @@
+using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    void FixedUpdate()
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
     
+    public float moveSpeed = 5f;
+
+    public Rigidbody2D rb;
     public Animator animator;
+
+    Vector2 movement;
 
 
     void Update()
     {
         // Yatay ve dikey girişleri al
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        animator.setFloat("Horizontal", horizontalInput);
-        animator.setFloat("Vertical", verticalInput);
-        animator.setFloat("Speed", movement.sqrMagnitude);
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
 
         // Hareket vektörünü oluştur
-        Vector2 movement = new Vector2(horizontalInput, verticalInput);
-
-        // Normalleştirme ve hızı çarpma
-        movement *= moveSpeed * Time.deltaTime;
-
-        // Hareketi uygula
-        transform.Translate(movement);
+        
+    
     }
 }
