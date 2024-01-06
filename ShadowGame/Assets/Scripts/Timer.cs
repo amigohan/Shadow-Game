@@ -1,11 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     private float timeLeft = 5.0f; // set your desired game time
-    [SerializeField] private Text timerText; // reference to the UI text object
+    [SerializeField] private TextMeshProUGUI timerText; // reference to the Text Mesh Pro object
 
     private void Update()
     {
@@ -13,7 +14,7 @@ public class Timer : MonoBehaviour
         if (timeLeft <= 0)
             GameOver();
 
-        // update the timer text on the UI
+        // update the timer text on the Text Mesh Pro object
         timerText.text = $"Time Left: {timeLeft:0.00} seconds";
     }
 
