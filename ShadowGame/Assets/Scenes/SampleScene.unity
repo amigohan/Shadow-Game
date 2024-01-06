@@ -1226,8 +1226,6 @@ GameObject:
   - component: {fileID: 310939926}
   - component: {fileID: 310939927}
   - component: {fileID: 310939928}
-  - component: {fileID: 310939929}
-  - component: {fileID: 310939930}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -1445,31 +1443,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10ee8d7866e7ec2438486295b02b5a46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &310939929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310939917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff21e3dd4f66f924594e9bab1893bc5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiElement: {fileID: 0}
---- !u!114 &310939930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310939917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2971a611556d2e441afb0e7d48963e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &314448278 stripped
@@ -2770,7 +2743,6 @@ GameObject:
   m_Component:
   - component: {fileID: 932858352}
   - component: {fileID: 932858351}
-  - component: {fileID: 932858354}
   - component: {fileID: 932858353}
   m_Layer: 0
   m_Name: Flower
@@ -2881,18 +2853,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.77
---- !u!114 &932858354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932858350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4759877eee747d24d87a8842d4d8bf2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &969278823
 PrefabInstance:
   m_ObjectHideFlags: 0
