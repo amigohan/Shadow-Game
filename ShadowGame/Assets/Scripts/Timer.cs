@@ -13,9 +13,9 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        // add a listener to the Start button
-        startButton.onClick.AddListener(StartTimer);
-        timerText.enabled = false;
+        
+                timerStarted = true;
+        timerText.enabled = true;
     }
 
     private void Update()
@@ -34,7 +34,6 @@ public class Timer : MonoBehaviour
     private void StartTimer()
     {
         timerStarted = true;
-        startButton.gameObject.SetActive(false); // hide the Start button
         timerText.enabled = true;
     }
 
