@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        
+
         timerStarted = true;
         timerText.enabled = true;
     }
