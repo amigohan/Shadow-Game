@@ -7,15 +7,33 @@ public class Timer : MonoBehaviour
 {
     private float timeLeft = 5.0f; // set your desired game time
     [SerializeField] private TextMeshProUGUI timerText; // reference to the Text Mesh Pro object
+    [SerializeField] private Button startButton; // reference to the Start button
+
+    private bool timerStarted = false; // flag to indicate if the timer has started
+
+    private void Start()
+    {
+        // add a listener to the Start button
+        startButton.onClick.AddListener(StartTimer);
+    }
 
     private void Update()
     {
-        timeLeft -= Time.deltaTime;
-        if (timeLeft <= 0)
-            GameOver();
+        if (timerStarted)
+        {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft <= 0)
+                GameOver();
 
-        // update the timer text on the Text Mesh Pro object
-        timerText.text = $"Time Left: {timeLeft:0.00} seconds";
+            // update the timer text on the Text Mesh Pro object
+            timerText.text = $"Time Left: {timeLeft:0.00} seconds";
+        }
+    }
+
+    private void StartTimer()
+    {
+        timerStarted = true;
+        startButton.gameObject.SetActive(false); // hide the Start button
     }
 
     private void GameOver()
