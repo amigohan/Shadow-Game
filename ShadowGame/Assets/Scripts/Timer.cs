@@ -38,6 +38,6 @@ public class Timer : MonoBehaviour
 
     private void GameOver()
     {
-        SceneManager.LoadScene(0); // it will reload your scene, probably this will work as a game restart for your project, you should do some better "game ending thingy" though
+        SceneManager.LoadScene(2); // it will reload your scene, probably this will work as a game restart for your project, you should do some better "game ending thingy" though
     }
 }

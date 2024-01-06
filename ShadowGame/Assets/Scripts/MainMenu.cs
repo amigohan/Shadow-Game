@@ -8,10 +8,11 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Button startButton;
+    [SerializeField] private int myFloatValue = 3;
 
     private void StartTimer()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(myFloatValue);
     }
     
     void Start()
