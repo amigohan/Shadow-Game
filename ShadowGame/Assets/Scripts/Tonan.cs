@@ -1,8 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Tonan : MonoBehaviour
 {
+
+    [SerializeField] private Button retryButton;
+    [SerializeField] private int Sahne = 3;
+
+
     // Sayacı tutacak olan değişken
     private static int ttonan = 0;
     [SerializeField] private Image flowerImage1;
@@ -22,8 +31,16 @@ public class Tonan : MonoBehaviour
         }
     }
 
+        private void Butonabas()
+    {
+        SceneManager.LoadScene(Sahne);
+        ttonan = 0;
+    }
+    
+
         void Start()
     {
+        retryButton.onClick.AddListener(Butonabas);
         // Görünümü kapat
         if (ttonan == 0)
         {
