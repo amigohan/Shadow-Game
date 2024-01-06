@@ -7,14 +7,13 @@ public class Timer : MonoBehaviour
 {
     private float timeLeft = 5.0f; // set your desired game time
     [SerializeField] private TextMeshProUGUI timerText; // reference to the Text Mesh Pro object
-    [SerializeField] private Button startButton; // reference to the Start button
 
     private bool timerStarted = false; // flag to indicate if the timer has started
 
     private void Start()
     {
         
-                timerStarted = true;
+        timerStarted = true;
         timerText.enabled = true;
     }
 
