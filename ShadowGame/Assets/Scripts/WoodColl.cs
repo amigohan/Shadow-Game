@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class WoodColl : MonoBehaviour
 {
-    public int wood = 0;
-    private bool isDestroyed = false;
+    public static int wood = 0;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isDestroyed && (other.CompareTag("Player") || other.CompareTag("Shadow")))
+        if (other.CompareTag("Player") || other.CompareTag("Shadow"))
         {
             wood++;
-            isDestroyed = true; // Set flag to prevent multiple increments
             Destroy(gameObject);
-            Debug.Log(wood);
+            Debug.Log("Wood count: " + wood);
         }
     }
 
@@ -26,5 +24,6 @@ public class WoodColl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
 }
