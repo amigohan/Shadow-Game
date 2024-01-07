@@ -37439,6 +37439,7 @@ GameObject:
   - component: {fileID: 1822864342}
   - component: {fileID: 1822864344}
   - component: {fileID: 1822864345}
+  - component: {fileID: 1822864346}
   m_Layer: 0
   m_Name: Shadow
   m_TagString: Shadow
@@ -37621,6 +37622,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1822864346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822864336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc1a7a1578af8b4eafdc3f7a8886dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioPlayer: {fileID: 1364650755}
 --- !u!1 &1823528635
 GameObject:
   m_ObjectHideFlags: 0
