@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Tonan : MonoBehaviour
 {
-    Timer timeScript;
+    FinishTimer timeScript;
 
     public TextMeshProUGUI scoreText;
 
@@ -22,13 +22,13 @@ public class Tonan : MonoBehaviour
 
         void Start()
     {
-        timeScript = FindObjectOfType<Timer>();
+        timeScript = FindObjectOfType<FinishTimer>();
     }
 
 
     private void Update()
     {
-        float ToplamScore = ((ToplananCicek * 20) + (timeScript.timeLeft * 2));
+        float ToplamScore = ((ToplananCicek * 20) + (timeScript.BombastikZaman * 2));
         scoreText.text = $"Score: {ToplamScore:0}";
 
         if (ToplananCicek == 0)
