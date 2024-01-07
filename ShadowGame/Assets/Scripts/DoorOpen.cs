@@ -1,18 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorOpen : MonoBehaviour
+public class SpriteChange : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Sprite newSprite;
+    [SerializeField] Collider2D myCollider;
+
+
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if ((other.CompareTag("Player")) && (KeyScript.Key == 1))
+        {
+            ChangeSprite();
+            Destroy(myCollider);
+        }
+    }
+
+
+    private void ChangeSprite()
+    {
+        if (newSprite != null)
+        {
+            spriteRenderer.sprite = newSprite;
+        }
+        else
+        {
+            Debug.LogError("New sprite is not assigned!");
+        }
     }
 }
