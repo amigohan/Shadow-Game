@@ -2,16 +2,23 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Timer : MonoBehaviour
 {
-    private float timeLeft = 5.0f; // set your desired game time
+
+
+
+
+    public float timeLeft = 5.0f; // set your desired game time
     [SerializeField] private TextMeshProUGUI timerText; // reference to the Text Mesh Pro object
 
     private bool timerStarted = false; // flag to indicate if the timer has started
 
     private void Start()
     {
+
 
         timerStarted = true;
         timerText.enabled = true;
