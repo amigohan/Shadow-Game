@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SocialPlatforms;
 
 public class Timer : MonoBehaviour
 {
@@ -18,7 +19,6 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-
 
         timerStarted = true;
         timerText.enabled = true;

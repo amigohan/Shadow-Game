@@ -10,10 +10,10 @@ public class ScorePoint : MonoBehaviour
     Timer timerCode;
     [SerializeField] private TextMeshProUGUI scoreText;
 
-    public void Start()
+    void Start()
     {
         timerCode = GetComponent<Timer>();
-        
+        Debug.Log(timerCode.timeLeft);
         
         scoreText.text = $"Time Left: {scoreText} seconds";
     }
