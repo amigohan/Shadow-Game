@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Teleporter
   - InteractableObject
+  - Shadow
   layers:
   - Default
   - TransparentFX
