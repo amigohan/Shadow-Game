@@ -9,6 +9,11 @@ using UnityEngine.SocialPlatforms;
 public class Timer : MonoBehaviour
 {
 
+    public GameOverScreen GameOverScreen;
+
+
+
+
 
 
 
@@ -29,11 +34,11 @@ public class Timer : MonoBehaviour
         if (timerStarted)
         {
             timeLeft -= Time.deltaTime;
-            if (timeLeft <= 0)
-                GameOver();
+            if (timeLeft <= 2.01f)
+            GameOver();
 
             // update the timer text on the Text Mesh Pro object
-            timerText.text = $"Time Left: {timeLeft:0.00} seconds";
+            timerText.text = $"Time Left: {timeLeft:0} seconds";
         }
     }
 
@@ -43,8 +48,9 @@ public class Timer : MonoBehaviour
         timerText.enabled = true;
     }
 
-    private void GameOver()
+    public void GameOver()
     {
-        SceneManager.LoadScene(2); // it will reload your scene, probably this will work as a game restart for your project, you should do some better "game ending thingy" though
+        GameOverScreen.Setup((int)timeLeft);
+        timerStarted = false;
     }
 }
