@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Retry Menu.unity
     guid: 9addca40833c5c84383d5409e0ddbb5d
+  - enabled: 1
+    path: Assets/Scenes/Nehir.unity
+    guid: ba0594546e51c6744afb7ffbf32b518e
   m_configObjects: {}
