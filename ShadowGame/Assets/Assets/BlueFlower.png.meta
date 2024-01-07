@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0815bb60e14a606428ca382a83ab3b7b
+guid: a0c03b289c2453344af9580ed14d531e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -46,10 +46,10 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5091117, y: 0.64448607}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 846, z: 0, w: 301}
+  spriteBorder: {x: 346, y: 375, z: 406, w: 315}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -121,7 +121,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BlueFlower_0
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 395
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76d9b7d7b8db2c44bb91720d919396e
+      internalID: -2034029038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFlower_1
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 412
+        width: 96
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29f671e157ca1c48a5cb820b02b01d2
+      internalID: 402708902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFlower_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 379
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27259c188f98e9f4b8d73d8c02f23a8a
+      internalID: 1716029869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +195,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueFlower_0: -2034029038
+      BlueFlower_1: 402708902
+      BlueFlower_2: 1716029869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
