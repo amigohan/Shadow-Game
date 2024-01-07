@@ -1644,7 +1644,7 @@ GameObject:
   - component: {fileID: 349256598}
   - component: {fileID: 349256597}
   - component: {fileID: 349256596}
-  - component: {fileID: 349256595}
+  - component: {fileID: 349256599}
   m_Layer: 0
   m_Name: Finish Cube
   m_TagString: Untagged
@@ -1652,18 +1652,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &349256595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349256594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38205eac52978ac4089b69194ce81940, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &349256596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1776,6 +1764,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349256599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349256594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ed6256774f3014194b7283c1cdd026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOverScreen: {fileID: 1542079426}
+  timeLeft: 5
+  timerText: {fileID: 1867533295}
 --- !u!1001 &392678702
 PrefabInstance:
   m_ObjectHideFlags: 0
