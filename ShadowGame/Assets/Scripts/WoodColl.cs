@@ -19,6 +19,8 @@ public class WoodColl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Reset wood count to zero when the scene starts/reloads
+        wood = 0;
     }
 
     // Update is called once per frame

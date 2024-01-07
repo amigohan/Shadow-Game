@@ -10,19 +10,20 @@ public class BridgeWood : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        // WoodColl sýnýfýnda wood deðiþkeni static olduðu için doðrudan sýnýf adý üzerinden eriþilebilir.
+        // WoodColl sï¿½nï¿½fï¿½nda wood deï¿½iï¿½keni static olduï¿½u iï¿½in doï¿½rudan sï¿½nï¿½f adï¿½ ï¿½zerinden eriï¿½ilebilir.
         if (WoodColl.wood == 3)
         {
             Obs.gameObject.SetActive(true);
             Obs2.gameObject.SetActive(true);
             Obs3.gameObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        // WoodColl sýnýfýndaki wood deðiþkeni static olduðu için artýk bir örneðe ihtiyaç yok.
+        // WoodColl sï¿½nï¿½fï¿½ndaki wood deï¿½iï¿½keni static olduï¿½u iï¿½in artï¿½k bir ï¿½rneï¿½e ihtiyaï¿½ yok.
     }
 
     // Update is called once per frame
