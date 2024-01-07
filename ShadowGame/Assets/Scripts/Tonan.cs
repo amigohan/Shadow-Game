@@ -24,7 +24,7 @@ public class Tonan : MonoBehaviour
 
     private void Update()
     {
-        scoreText.text = "Score: " + ToplananCicek.ToString();
+        scoreText.text = "Score: " + ((ToplananCicek * 20));
         // Görünümü kapat
         if (ToplananCicek == 0)
         {
