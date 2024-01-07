@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static int Key;
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            Key = 1;
+        }
+    }
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Key = 0;
     }
 }
