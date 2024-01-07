@@ -2,20 +2,18 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public AudioClip collisionSound; // Ses dosyası
-    private AudioSource audioSource;
+    public AudioSource AudioPlayer;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = collisionSound;
+    
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Flower") // Temas etmek istediğiniz objenin ismi
+        if (collision.gameObject.CompareTag("InteractableObject")) // Temas etmek istediğiniz objenin etiketi
         {
-            audioSource.Play();
+            AudioPlayer.Play();
         }
     }
 }
