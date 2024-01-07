@@ -26,10 +26,6 @@ public class FlowerCollectScript : MonoBehaviour
                 uiScript.ToplananCicek++;
                 Debug.Log("Toplanan Çiçek: " + uiScript.ToplananCicek);
             }
-            else
-            {
-                Debug.LogError("uiScript boþ. Doðru þekilde atandýðýndan emin olun.");
-            }
         }
     }
 

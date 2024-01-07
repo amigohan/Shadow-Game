@@ -18,6 +18,13 @@ public class Tonan : MonoBehaviour
 
         void Start()
     {
+        
+    }
+
+
+    private void Update()
+    {
+        scoreText.text = "Score: " + ToplananCicek.ToString();
         // Görünümü kapat
         if (ToplananCicek == 0)
         {
@@ -37,20 +44,14 @@ public class Tonan : MonoBehaviour
         {
             flowerImage1.enabled = true;
             flowerImage2.enabled = true;
-            flowerImage3.enabled = false;      
+            flowerImage3.enabled = false;
         }
 
         else if (ToplananCicek == 3)
         {
             flowerImage1.enabled = true;
             flowerImage2.enabled = true;
-            flowerImage3.enabled = true;   
+            flowerImage3.enabled = true;
         }
-    }
-
-
-    private void Update()
-    {
-        scoreText.text = "Score: " + ToplananCicek.ToString();
     }
 }
