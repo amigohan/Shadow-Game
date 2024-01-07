@@ -13,7 +13,7 @@ public class PlayerCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("YourTag")) // Temas etmek istediğiniz objenin etiketi
+        if (collision.gameObject.name == "Flower") // Temas etmek istediğiniz objenin ismi
         {
             audioSource.Play();
         }

@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 310939925}
   - component: {fileID: 310939926}
   - component: {fileID: 310939927}
+  - component: {fileID: 310939928}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -1429,6 +1430,19 @@ MonoBehaviour:
   GameOverScreen: {fileID: 1542079426}
   timeLeft: 5
   timerText: {fileID: 1867533295}
+--- !u!114 &310939928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310939917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc1a7a1578af8b4eafdc3f7a8886dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSound: {fileID: 8300000, guid: 1972d92b75a23a54099a36b1ce4960c9, type: 3}
 --- !u!4 &314448278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6455123206326087747, guid: 1eb20f9918a1a3143a22d29257831a57, type: 3}
@@ -1451,6 +1465,7 @@ GameObject:
   - component: {fileID: 340281810}
   - component: {fileID: 340281809}
   - component: {fileID: 340281808}
+  - component: {fileID: 340281811}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -1559,6 +1574,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340281805}
   m_CullTransparentMesh: 1
+--- !u!114 &340281811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340281805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07833f9d9f6989f4295414f0280a9700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 340281808}
+  myFloatValue: 0
 --- !u!1001 &340429674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4038,6 +4067,7 @@ GameObject:
   - component: {fileID: 1187112595}
   - component: {fileID: 1187112594}
   - component: {fileID: 1187112593}
+  - component: {fileID: 1187112597}
   m_Layer: 5
   m_Name: Retry Button
   m_TagString: Untagged
@@ -4146,6 +4176,20 @@ RectTransform:
   m_AnchoredPosition: {x: 10.386169, y: -305.19232}
   m_SizeDelta: {x: 170.3452, y: 168.6251}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1187112597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187112592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07833f9d9f6989f4295414f0280a9700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 1187112593}
+  myFloatValue: 1
 --- !u!1 &1230423584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,7 +4858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1542079425
 RectTransform:
   m_ObjectHideFlags: 0
