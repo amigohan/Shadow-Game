@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nehir.unity
     guid: ba0594546e51c6744afb7ffbf32b518e
+  - enabled: 1
+    path: Assets/Scenes/SampleScene1.unity
+    guid: 70446b44f16636240ba4f7bd025f7ce9
   m_configObjects: {}
