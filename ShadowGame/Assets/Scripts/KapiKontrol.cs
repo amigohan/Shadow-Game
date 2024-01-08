@@ -5,15 +5,15 @@ public class KapiKontrol : MonoBehaviour
     public GameObject kapi;
     public Collider2D myCollider;
 
-
     private bool butonUzerinde;
-
+    private float timer;
 
     void Start()
     {
         butonUzerinde = false;
-        
+        timer = 0f;
     }
+
     void Update()
     {
         // Eðer butonun üzerindeysek kapýyý aç
@@ -24,8 +24,16 @@ public class KapiKontrol : MonoBehaviour
         }
         else
         {
-            kapi.SetActive(true);
-            myCollider.enabled = true;
+            // Timer'ý arttýr
+            timer += Time.deltaTime;
+
+            // Eðer timer 3 saniyeyi geçerse kapýyý kapat
+            if (timer >= 2f)
+            {
+                kapiKapat();
+                // Timer'ý sýfýrla
+                timer = 0f;
+            }
         }
     }
 
@@ -47,4 +55,9 @@ public class KapiKontrol : MonoBehaviour
         }
     }
 
+    void kapiKapat()
+    {
+        kapi.SetActive(true);
+        myCollider.enabled = true;
+    }
 }
