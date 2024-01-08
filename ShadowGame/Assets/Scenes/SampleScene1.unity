@@ -7467,7 +7467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverScreen: {fileID: 2117443869}
-  kalanZaman: 60
+  kalanZaman: 120
   timerText: {fileID: 1601476619}
   BombastikZaman: 0
 --- !u!212 &612824678
@@ -25189,7 +25189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverScreen: {fileID: 2117443869}
-  timeLeft: 60
+  timeLeft: 120
   timerText: {fileID: 1601476619}
 --- !u!1 &2123640579
 GameObject:
